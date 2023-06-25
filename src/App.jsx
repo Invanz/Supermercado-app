@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Header } from './components/Header';
 import { ProductList } from './components/ProductList';
+import { MenuCategorias } from './components/MenuCategorias';
 
 function App() {
 	const [allProducts, setAllProducts] = useState([]);
@@ -17,6 +18,7 @@ function App() {
 				countProducts={countProducts}
 				setCountProducts={setCountProducts}
 			/>
+			<MenuCategorias	/>
 			<ProductList
 				allProducts={allProducts}
 				setAllProducts={setAllProducts}

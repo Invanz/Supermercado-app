@@ -28,7 +28,7 @@ export const Header = ({
 
 	return (
 		<header>
-			<h1>Supermercado</h1>
+			<h1>Supermercado ABC</h1>
 
 			<div className='container-icon'>
 				<div

@@ -26,7 +26,12 @@ export const ProductList = ({
 	};
 
 	return (
+		<div>
+		<div className='titulos'>
+			<h1>Listado de Productos</h1>
+		</div>
 		<div className='container-items'>
+			
 			{data.map(product => (
 				<div className='item' key={product.id}>
 					<figure>
@@ -41,6 +46,7 @@ export const ProductList = ({
 					</div>
 				</div>
 			))}
+		</div>
 		</div>
 	);
 };
