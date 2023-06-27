@@ -3,6 +3,7 @@ import { Header } from './components/Header';
 import { ProductList } from './components/ProductList';
 import { AddProduct } from "./components/AddProduct";
 import { Login } from "./components/Login";
+import { MenuCategorias } from './components/MenuCategorias';
 
 
 function App() {
@@ -12,7 +13,23 @@ function App() {
 
 	return (
 		<>
-		<Login />
+			<Header
+				allProducts={allProducts}
+				setAllProducts={setAllProducts}
+				total={total}
+				setTotal={setTotal}
+				countProducts={countProducts}
+				setCountProducts={setCountProducts}
+			/>
+			<MenuCategorias	/>
+			<ProductList
+				allProducts={allProducts}
+				setAllProducts={setAllProducts}
+				total={total}
+				setTotal={setTotal}
+				countProducts={countProducts}
+				setCountProducts={setCountProducts}
+			/>
 		</>
 	);
 }
