@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Header } from './components/Header';
 import { ProductList } from './components/ProductList';
-import {BrowserRouter, Routes, Route} from "react-router-dom"
-import Signup from './components/Signup';
+import { AddProduct } from "./components/AddProduct";
+import { Login } from "./components/Login";
 
 
 function App() {
@@ -13,13 +13,8 @@ function App() {
 
 	return (
 		<>
-			<BrowserRouter>
-				<Routes>
-					<Route path="/" element={<Login />}></Route>
-					<Route path="/" element={<Signup />}></Route>
-				</Routes>
-			</BrowserRouter>
-			<Header
+		<Login />
+			{/* <Header
 				allProducts={allProducts}
 				setAllProducts={setAllProducts}
 				total={total}
@@ -34,7 +29,7 @@ function App() {
 				setTotal={setTotal}
 				countProducts={countProducts}
 				setCountProducts={setCountProducts}
-			/>
+			/> */}
 		</>
 	);
 }

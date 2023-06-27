@@ -1,25 +1,23 @@
-import React from "react";  
-import { Link } from "react-router-dom"
 
-function Login() {
-    return (
-        <div className="d-flex_justify-content-center_align-items-center_bg-primary_vh-100">
-            <div className="bg-white_p-3_rounded_w-25">
-                <h2>Sign-In</h2>
-                <form action="">
-                    <div className="mb-3">
-                        <label htmlFor="email"><strong>Email</strong></label>
-                        <input type="email" placeholder="Enter Email" className="form-control_rounded-0" />
-                    </div>
-                    <div className="mb-3">
-                        <label htmlFor="password"><strong>Password</strong></label>
-                        <input type="password" placeholder="Enter Password" />
-                    </div>
-                    <button className="btn_btn-success">Log in</button>
-                    <p>Usted accede a nuestros términos y condiciones</p>
-                    <Link to="/signup" className="btn_btn-default_border">Create Account</Link>
-                </form>
-            </div>
+
+export const Login = () => {
+
+	return (
+        <div className="formulario">
+            <h1>Inicio de sesión</h1>
+            <form method="post">
+                <div className="username">
+                    <input type="text" required /><br /><br />
+                    <label>Nombre del usuario</label>
+                </div>
+                <div className="contrasena">
+                    <input type="password" required /><br /><br />
+                    <label>Contraseña</label>
+                </div>
+                <div className="recordar">Olvidé mi contraseña</div><br />
+                <input type="submit" value="Ingresar" className="iniciar"/><br />
+               <br /> <div className="registrarse">No tengo una cuenta y quiero <a href="#">registrarme</a></div>
+            </form>
         </div>
-    )
-}
+    );
+};
