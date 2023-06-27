@@ -8,7 +8,8 @@
 
 body {
 	margin: 0 auto;
-	max-width: 1200px;
+	padding: 0;
+	max-width: 1000px;
 	font-family: 'Lato';
 	color: #333;
 	background-color: rgb(236, 244, 241);
@@ -262,6 +263,92 @@ header {
   transform: scale(1.03);
   border-radius: 0;
 }
+
+.productFormulary {
+	flex-direction: column;
+	background-color: #423f3f;
+	justify-content: center;
+	align-items: center;
+}
+
+.formulary {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	gap: 4px;
+	background-color: #3d3a3a;
+}
+
+.formulario {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	background: white;
+	border-radius: 10px;
+
+}
+
+.formulario h1 {
+	text-align: center;
+	padding: 0 0 20px 0;
+	border-bottom: 1px solid silver;
+}
+
+.formulario form {
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+
+form .username, .contrasena {
+	padding: 1px;
+}
+
+form .username {
+	position: relative;
+	border-bottom: 2px solid #adadad;
+	margin: 30px 0;
+}
+
+.username input{
+	width: 100%;
+	padding: 0 5px;
+	height: 40px;
+	font-size: 16px;
+	border: none;
+	background: rgb(175, 175, 175);
+	outline: none;
+}
+
+form .contrasena {
+	position: relative;
+	border-bottom: 2px solid #adadad;
+	margin: 30px 0;
+}
+
+.contrasena input{
+	width: 100%;
+	padding: 0 5px;
+	height: 40px;
+	font-size: 16px;
+	border: none;
+	background: rgb(175, 175, 175);
+	outline: none;
+}
+
+.formulario input {
+	border: none;
+	border-radius: 20px;
+}
+
+.iniciar {
+	width: 150px;
+	height: 30px;
+}
+
+.iniciar:hover{
+	background-color: grey;
 
 .side-bar {
 	width: 200px;

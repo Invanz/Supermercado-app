@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import { Header } from './components/Header';
 import { ProductList } from './components/ProductList';
+import { AddProduct } from "./components/AddProduct";
+import { Login } from "./components/Login";
 import { MenuCategorias } from './components/MenuCategorias';
+
 
 function App() {
 	const [allProducts, setAllProducts] = useState([]);
