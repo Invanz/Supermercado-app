@@ -96,7 +96,7 @@ export const Header = ({
 
 							<div className='cart-total'>
 								<h3>Total:</h3>
-								<span className='total-pagar'>${total}</span>
+								<span className='total-pagar' data-testid="total">${total}</span>
 							</div>
 
 							<button className='btn-clear-all' onClick={onCleanCart}>
